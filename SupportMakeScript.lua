@@ -2,7 +2,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/blood
 local window = library:Window("By VuRobloxVietNam")
     
 window:Button("Copy ID CFrame", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TranVanBao1411/SupportBuLon/main/CoppyCframe"))()
+setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
 end)
 
 window:Button("Infinite Yield", function()
