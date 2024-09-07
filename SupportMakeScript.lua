@@ -1,0 +1,28 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/turtle"))()
+
+local OwO = library:Window("By VuRobloxVietNam")
+
+OwO:Button("Copy ID CFrame", function()
+setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+end)
+OwO:Button("FlyGui", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+OwO:Button("Infinite Yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+OwO:Button("Anti AFK", function()
+local VirtualUser = game:GetService("VirtualUser")
+        local character = game.Players.LocalPlayer.Character
+
+        game.Players.LocalPlayer.Idled:Connect(function()
+        VirtualUser:CaptureController()
+        VirtualUser:ClickButton2(Vector2.new())
+    end)
+end)
+Owo:Button("Boost FPS",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TranVanBao1411/ScriptLinhTinh/main/BoostFPS"))()
+end)
+Owo:Button("Super Low Mode",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/crystalnerd/ScriptLinhTinh/main/AntiLag2"))()
+end)
