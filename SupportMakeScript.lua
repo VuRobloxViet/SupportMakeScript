@@ -1,4 +1,5 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/turtle"))()
+local originallibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/turtle"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/TranVanBao1411/Library/retard/TurtleUI.lua"))()
 local window = library:Window("By VuRobloxVietNam")
     
 window:Button("Copy ID CFrame", function()
@@ -9,8 +10,12 @@ window:Button("Infinite Yield", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 
-window:Button("Dex", function()
+window:Button("Dex PC", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end)
+
+window:Button("Dex Mobile", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 end)
 
 window:Button("Old Dex", function()
@@ -89,26 +94,6 @@ window:Button("Old Dex", function()
 	end
 
 	Load(Dex)
-end)
-
-window:Button("Console", function()
-local _, str = pcall(function()
-		return game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/console.lua", true)
-	end)
-
-	local s, e = loadstring(str)
-	if typeof(s) ~= "function" then
-		return
-	end
-
-	local success, message = pcall(s)
-	if (not success) then
-		if printconsole then
-			printconsole(message)
-		elseif printoutput then
-			printoutput(message)
-		end
-	end
 end)
 
 window:Button("FlyGui", function()
